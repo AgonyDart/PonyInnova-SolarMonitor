@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monitor de Paneles Solares</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="dashboard">
+      <h1>Monitor de Paneles Solares</h1>
+
+      <div class="charts-container">
+        <div class="chart-wrapper">
+          <canvas id="ampsChart"></canvas>
+        </div>
+      </div>
+
+      <div class="panels-container" id="panelsContainer"></div>
+
+      <div class="summary">
+        <h2>Resumen Financiero</h2>
+        <p>
+          Pérdida estimada por baja eficiencia:
+          <span id="totalLoss">$0.00</span> MXN
+        </p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
