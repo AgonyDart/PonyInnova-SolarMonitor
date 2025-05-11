@@ -13,18 +13,24 @@
 
       <div class="charts-container">
         <div class="chart-wrapper">
-          <canvas id="ampsChart"></canvas>
+          <canvas id="currentChart"></canvas>
+        </div>
+        <div class="chart-wrapper">
+          <canvas id="powerChart"></canvas>
         </div>
       </div>
 
       <div class="panels-container" id="panelsContainer"></div>
 
-      <div class="summary">
-        <h2>Resumen Financiero</h2>
-        <p>
-          Pérdida estimada por baja eficiencia:
-          <span id="totalLoss">$0.00</span> MXN
-        </p>
+      <div class="metrics-container">
+        <div class="metric-card">
+          <h3>Eficiencia del Sistema</h3>
+          <div class="metric-value" id="efficiency">0%</div>
+        </div>
+        <div class="metric-card">
+          <h3>Pérdida Estimada</h3>
+          <div class="metric-value loss" id="estimatedLoss">$0.00 MXN</div>
+        </div>
       </div>
     </div>
 
